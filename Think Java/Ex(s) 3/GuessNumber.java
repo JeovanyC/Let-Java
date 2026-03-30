@@ -36,7 +36,7 @@ public class GuessNumber{
         in.close();
     }
     
-    public static void CheckGuess(int to_guess, int guess) {
+    public static void checkGuess(int to_guess, int guess) {
         
         System.out.printf("The number I was thinking of is: %d%n", to_guess);
         if (to_guess == guess) {
