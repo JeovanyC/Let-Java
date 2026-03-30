@@ -11,16 +11,12 @@ public class RomanInteger {
         String roman_regex = "^M{0,3}(CM|CD|D?C{0,3})"
                              + "(XC|XL|L?X{0,3})"
                              + "(IX|IV|V?I{0,3})$";
+
+        String roman_number;
         while (true) {
 	  System.out.print("Enter a roman number: ");
-
-	  if (!in.hasNextLine()) {
-	      System.out.println("Invalid roman number");
-	      in.next();
-	      continue;
-	  }
 	  
-	  String roman_number = in.nextLine().toUpperCase();
+	  roman_number = in.nextLine().toUpperCase();
 
 	  if (!roman_number.matches(roman_regex)) {
 	      System.out.println("Invalid roman number");
@@ -29,12 +25,13 @@ public class RomanInteger {
 	  break;
         }
 
-        convertToInteger(roman_number);
+        int converted_roman = convertToInteger(roman_number);
         
+        System.out.println(converted_roman);
         in.close();
     }
 
-    private static void convertToInteger(String[] roman_number) {
+    private static int convertToInteger(String roman_number) {
 
         Map<Character, Integer> roman_map = new HashMap<>();
 
@@ -63,6 +60,6 @@ public class RomanInteger {
 	  }
         }
 
-        System.out.println(total);
+        return total;
     }
 }
