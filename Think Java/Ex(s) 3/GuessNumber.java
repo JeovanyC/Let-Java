@@ -17,7 +17,7 @@ public class GuessNumber{
 	  System.out.print("Type a number: ");
 
 	  if (!in.hasNextInt()) {
-	      System.out.printf("Invalid input: try integer in range of 1 - 100");
+	      System.out.println("Invalid input: try integer in range of 1 - 100");
 	      in.next();
 	      continue;
 	  }
@@ -25,12 +25,12 @@ public class GuessNumber{
 	  player_guess = in.nextInt();
 	  
 	  if (player_guess > 100 || player_guess < 1) {
-	      System.out.printf("Invalid input: try integer in range of 1 - 100");
+	      System.out.println("Invalid input: try integer in range of 1 - 100");
 	      continue;
 	  }
 	  break;
 	  }
-        System.out.print("Your guess is: %d%n", player_guess);
+        System.out.printf("Your guess is: %d%n", player_guess);
         
         CheckGuess(unknown_number, player_guess);
         in.close();
