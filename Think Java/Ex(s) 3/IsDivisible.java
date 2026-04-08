@@ -10,11 +10,10 @@ public class IsDivisible{
         
         Scanner in = new Scanner(in);
 
-        int n;
-        int m;
+        int n, m;
         try {
-	  n = Integer.parseInteger(args[0]);
-	  m = Integer.parseInteger(args[1]);
+	  n = Integer.parseInt(args[0]);
+	  m = Integer.parseInt(args[1]);
         } catch (NumberFormatException err) {
 	  System.out.println("Invalid input value: provide two integer");
 	  return;
