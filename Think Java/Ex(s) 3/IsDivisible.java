@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class IsDivisible{
 
     public static void main(String[] args) {
-        if (args.length() != 2) {
+        if (args.length != 2) {
 	  System.out.println("Invalid input value: provide two integer");
 	  return;
         }
