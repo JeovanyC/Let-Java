@@ -26,6 +26,6 @@ public class IsDivisible{
         }
 
         System.out.println(n % m == 0);
-        in.close()
+        in.close();
     }
 }
