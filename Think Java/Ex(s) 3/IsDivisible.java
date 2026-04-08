@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class IsDivisible{
 
     public static void main(String[] args) {
@@ -8,8 +6,6 @@ public class IsDivisible{
 	  return;
         }
         
-        Scanner in = new Scanner(in);
-
         int n, m;
         try {
 	  n = Integer.parseInt(args[0]);
@@ -25,6 +21,5 @@ public class IsDivisible{
         }
 
         System.out.println(n % m == 0);
-        in.close();
     }
 }

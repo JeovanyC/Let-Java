@@ -20,6 +20,5 @@ public class IsTriangle {
         int sum = a + b + c;
 
         System.out.println(sum - max > max);
-        in.close();
     }
 }
