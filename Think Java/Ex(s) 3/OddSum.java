@@ -1,4 +1,4 @@
-import java.util.Scanner;
+'import java.util.Scanner;
 
 public class OddSum {
 
@@ -23,16 +23,16 @@ public class OddSum {
 	  }
 	  break;
         }
-        System.println(OddSum(num));
+        System.println(oddSum(num));
 
         in.close();
     }
 
-    public static int OddSum(integer num) {
+    public static int oddSum(integer num) {
         if (num == 1) {
 	  return num;
         }
-        int sum = OddSum(num - 2);
+        int sum = oddSum(num - 2);
         return sum;
     }
 }
