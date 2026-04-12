@@ -28,7 +28,7 @@ public class OddSum {
         in.close();
     }
 
-    public static int oddSum(integer num) {
+    public static int oddSum(int num_1) {
         if (num == 1) {
 	  return num;
         }
